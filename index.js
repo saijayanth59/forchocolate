@@ -9,8 +9,8 @@ app.set(express.static(path.join(__dirname, "views")));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get("/home", (req, res) => {
-  res.render("index", { name: "", bmi: 0 });
+app.get("/", (req, res) => {
+  res.render("/", { name: "", bmi: 0 });
 });
 
 app.post("/home", (req, res) => {
