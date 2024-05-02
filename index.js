@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.render("/", { name: "", bmi: 0 });
 });
 
-app.post("/home", (req, res) => {
+app.post("/", (req, res) => {
   weight = parseFloat(req.body.weight);
   height = parseFloat(req.body.height);
   result = weight / (height * height);
