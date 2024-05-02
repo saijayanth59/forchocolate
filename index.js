@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.render("/", { name: "", bmi: 0 });
+  res.render("index", { name: "", bmi: 0 });
 });
 
 app.post("/", (req, res) => {
