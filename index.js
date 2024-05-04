@@ -17,7 +17,6 @@ app.post("/", (req, res) => {
   weight = parseFloat(req.body.weight);
   height = parseFloat(req.body.height);
   result = weight / (height * height);
-  result;
 
   res.render("index", { name: req.body.name, bmi: result });
 });
